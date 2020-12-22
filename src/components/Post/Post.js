@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
-import Posts from "./components/Posts/Posts";
 
-class App extends Component {
+class Post extends Component {
     render() {
+        let {post} = this.props;
         return (
             <div>
-                <Posts/>
+                {post.body}-{post.id}
             </div>
         );
     }
 }
 
-export default App;
+export default Post;
