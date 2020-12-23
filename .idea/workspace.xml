@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="449aa7fb-b40d-42f6-8d3d-9dc5d8158d29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/FullPost/FullPost.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button/DetailedButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ComposedPost/ComposedPost.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FullPost/FullPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FullPost/FullPost.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Post/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/Post.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Posts/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Posts/Posts.js" afterDir="false" />
     </list>
@@ -73,7 +74,7 @@
       <workItem from="1608537411723" duration="555000" />
       <workItem from="1608538012174" duration="3795000" />
       <workItem from="1608615987168" duration="763000" />
-      <workItem from="1608616862905" duration="4379000" />
+      <workItem from="1608616862905" duration="6103000" />
     </task>
     <servers />
   </component>

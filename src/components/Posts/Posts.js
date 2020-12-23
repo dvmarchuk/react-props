@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import PostService from "../PostService";
 import Post from "../Post/Post";
+import FullPost from "../FullPost/FullPost";
+import ComposedPost from "../ComposedPost/ComposedPost";
 
 class Posts extends Component {
 
@@ -26,15 +28,16 @@ class Posts extends Component {
             <div>
                 <div>
                     {posts.map(post =>
-                        <Post
+                        <ComposedPost
                             item={post}
                             key={post.id}
-                            onUserClick = {this.onUserClick}
-                        />)}
+                            onUserClick = {this.onUserClick}/>
+                    )}
+
                 </div>
                 <hr/>
                 <div>
-                    {postClicked && <span>{postClicked.body}</span>}
+                    {postClicked && <FullPost item={postClicked}/>}
                 </div>
             </div>
         );
