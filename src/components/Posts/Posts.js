@@ -4,8 +4,14 @@ import Post from "../Post/Post";
 
 class Posts extends Component {
 
-    state = {posts: []};
+    state = {posts: [], postClicked: null};
     postService = new PostService();
+
+    onUserClick = (id) => {
+        let {posts} = this.state;
+        let findPost = posts.find(value => value.id === id);
+        this.setState({postClicked: findPost})
+    };
 
     async componentDidMount(){
         let posts = await this.postService.getPosts();
@@ -15,10 +21,21 @@ class Posts extends Component {
 
 
     render() {
-        let {posts} = this.state;
+        let {postClicked, posts} = this.state;
         return (
             <div>
-                {posts.map(post => <Post item={post}/>)}
+                <div>
+                    {posts.map(post =>
+                        <Post
+                            item={post}
+                            key={post.id}
+                            onUserClick = {this.onUserClick}
+                        />)}
+                </div>
+                <hr/>
+                <div>
+                    {postClicked && <span>{postClicked.body}</span>}
+                </div>
             </div>
         );
     }

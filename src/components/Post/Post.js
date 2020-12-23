@@ -2,10 +2,13 @@ import React, {Component} from 'react';
 
 class Post extends Component {
     render() {
-        let {post} = this.props;
+        let {item, onUserClick} = this.props;
         return (
             <div>
-                {post.body}-{post.id}
+                {item.userId} - {item.title}
+                <button onClick={() => {
+                    onUserClick(item.id);
+                }}>details</button>
             </div>
         );
     }
